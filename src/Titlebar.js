@@ -15,7 +15,8 @@ const Titlebar = props => {
       style={global_style.header}>
       <TouchableOpacity
         style={global_style.headerLeft}
-        onPress={this.props.backAction}>
+        //onPress={this.props.backAction
+      >
         <Feather name='chevron-left' size={RF(4)} color='white' />
       </TouchableOpacity>
       <View style={global_style.headerCenter}>
