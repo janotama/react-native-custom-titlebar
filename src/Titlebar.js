@@ -11,14 +11,20 @@ const Titlebar = props => {
     <LinearGradient
       start={{ x: 0.0, y: 0 }}
       end={{ x: 1, y: 1.0 }}
-      colors={["#9769f6", "#5249d0", "#5249d0", "#06cbd6"]}
+      colors={["#005cb2", "#005cb2"]}
       style={global_style.header}>
-      <TouchableOpacity
-        style={global_style.headerLeft}
-        //onPress={this.props.backAction
-      >
-        <Feather name='chevron-left' size={RF(4)} color='white' />
-      </TouchableOpacity>
+      {this.props.backAction !== undefined ? (
+        <TouchableOpacity
+          style={global_style.headerLeft}
+          onPress={this.props.backAction}>
+          <Feather name='menu' size={RF(4)} color='white' />
+        </TouchableOpacity>
+      ) : (
+        <TouchableOpacity
+          style={global_style.headerLeft}>
+          <Feather name='menu' size={RF(4)} color='white' />
+        </TouchableOpacity>
+      )}
       <View style={global_style.headerCenter}>
         <Text style={global_style.pageTitleFont}>
           {props.title || "This is Header"}
