@@ -13,10 +13,10 @@ const Titlebar = props => {
       end={{ x: 1, y: 1.0 }}
       colors={["#005cb2", "#005cb2"]}
       style={global_style.header}>
-      {this.props.backAction !== undefined ? (
+      {props.backAction !== undefined ? (
         <TouchableOpacity
           style={global_style.headerLeft}
-          onPress={this.props.backAction}>
+          onPress={props.backAction}>
           <Feather name='menu' size={RF(4)} color='white' />
         </TouchableOpacity>
       ) : (
