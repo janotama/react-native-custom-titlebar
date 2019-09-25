@@ -22,11 +22,9 @@
 npm install https://github.com/janotama/react-native-custom-titlebar#readme
 ```
 
-## Run tests
+## Props
 
-```sh
-npm run test
-```
+* title [string]
 
 ## Author
 
@@ -48,4 +46,4 @@ Copyright © 2019 [Janotama](https://github.com/janotama).<br />
 This project is [ISC](https://github.com/janotama/react-native-custom-titlebar/blob/master/LICENSE) licensed.
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+<!-- _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_ -->
