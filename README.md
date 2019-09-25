@@ -19,7 +19,7 @@
 ## Install
 
 ```sh
-npm install https://github.com/janotama/react-native-custom-titlebar#readme
+npm install https://github.com/janotama/react-native-custom-titlebar
 ```
 
 ## Props
@@ -40,14 +40,14 @@ npm install https://github.com/janotama/react-native-custom-titlebar#readme
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/janotama/react-native-custom-titlebar/issues).
 
-## Show your support
+<!-- ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if this project helped you! -->
 
-## 📝 License
+<!-- ## 📝 License
 
 Copyright © 2019 [Janotama](https://github.com/janotama).<br />
 This project is [ISC](https://github.com/janotama/react-native-custom-titlebar/blob/master/LICENSE) licensed.
 
-***
+*** -->
 <!-- _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_ -->
