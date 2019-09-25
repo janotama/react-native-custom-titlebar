@@ -25,6 +25,10 @@ npm install https://github.com/janotama/react-native-custom-titlebar#readme
 ## Props
 
 * title [string]
+* backAction [function]
+* backgroundColor [array]
+* leftIcon [string]
+* rightIcon [string]
 
 ## Author
 
