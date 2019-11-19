@@ -49,7 +49,10 @@ export default function styles() {
       },
       separator: {
         height: RF(8),
-        width: getWidthSize(3)
+        width: getWidthSize(3),
+        marginLeft: getWidthSize(5),
+        justifyContent: "center",
+        alignItems: "center"
       }
     });
   } else {
@@ -84,7 +87,10 @@ export default function styles() {
       },
       separator: {
         height: RF(8),
-        width: getWidthSize(3)
+        width: getWidthSize(3),
+        marginLeft: getWidthSize(5),
+        justifyContent: "center",
+        alignItems: "center"
       }
     });
   }
