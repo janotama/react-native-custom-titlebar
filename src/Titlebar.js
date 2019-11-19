@@ -38,7 +38,7 @@ const Titlebar = props => {
               </TouchableOpacity>
             )
           :
-          (<View style={global_style.separator} />)
+          (<View style={[global_style.separator]} />)
       }
       <View style={[global_style.headerCenter, { height: props.height ? RF(props.height) : RF(8) }]}>
         <Text style={[global_style.pageTitleFont]}>
