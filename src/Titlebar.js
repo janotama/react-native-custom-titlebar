@@ -40,7 +40,7 @@ const Titlebar = props => {
           null
       }
       <View style={[global_style.headerCenter]}>
-        <Text style={[global_style.pageTitleFont, { marginLeft: props.isBackEnabled ? 0 : 10 }]}>
+        <Text style={[global_style.pageTitleFont, { marginLeft: 10 }]}>
           {props.title || "This is Header"}
         </Text>
       </View>
