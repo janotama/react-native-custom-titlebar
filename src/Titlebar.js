@@ -13,6 +13,7 @@ props :
 - backgroundColor [array]
 - leftIcon [string]
 - isBackEnabled [bool]
+- height [number]
 */
 
 const Titlebar = props => {
@@ -21,7 +22,7 @@ const Titlebar = props => {
       start={{ x: 0.0, y: 0 }}
       end={{ x: 1, y: 1.0 }}
       colors={props.backgroundColor}
-      style={global_style.header}>
+      style={[global_style.header, { height: props.height ? RF(props.height) : RF(10) }]}>
       {
         props.isBackEnabled ?
           props.backAction !== undefined ? (
@@ -37,7 +38,7 @@ const Titlebar = props => {
               </TouchableOpacity>
             )
           :
-          (<View style={global_style.headerLeft} />)
+          (<View style={global_style.separator} />)
       }
       <View style={[global_style.headerCenter]}>
         <Text style={[global_style.pageTitleFont]}>
