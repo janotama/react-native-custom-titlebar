@@ -6,25 +6,39 @@ import styles from "./Styles.js";
 const global_style = styles().global;
 import { RFPercentage as RF } from "react-native-responsive-fontsize";
 
+/*
+props : 
+- title [string]
+- backAction [function]
+- backgroundColor [array]
+- leftIcon [string]
+- isBackEnabled [bool]
+*/
+
 const Titlebar = props => {
   return (
     <LinearGradient
       start={{ x: 0.0, y: 0 }}
       end={{ x: 1, y: 1.0 }}
-      colors={["#005cb2", "#005cb2"]}
+      colors={props.backgroundColor}
       style={global_style.header}>
-      {props.backAction !== undefined ? (
-        <TouchableOpacity
-          style={global_style.headerLeft}
-          onPress={props.backAction}>
-          {/* <Feather name='menu' size={RF(4)} color='white' /> */}
-        </TouchableOpacity>
-      ) : (
-        <TouchableOpacity
-          style={global_style.headerLeft}>
-          <Feather name='menu' size={RF(4)} color='white' />
-        </TouchableOpacity>
-      )}
+      {
+        props.isBackEnabled ?
+          props.backAction !== undefined ? (
+            <TouchableOpacity
+              style={global_style.headerLeft}
+              onPress={props.backAction}>
+              {/* <Feather name='menu' size={RF(4)} color='white' /> */}
+            </TouchableOpacity>
+          ) : (
+              <TouchableOpacity
+                style={global_style.headerLeft}>
+                <Feather name='menu' size={RF(4)} color='white' />
+              </TouchableOpacity>
+            )
+          :
+          null
+      }
       <View style={global_style.headerCenter}>
         <Text style={global_style.pageTitleFont}>
           {props.title || "This is Header"}
