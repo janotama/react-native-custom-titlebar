@@ -1,7 +1,7 @@
 "use strict";
 
 import { Dimensions, StyleSheet, Platform } from "react-native";
-import {RFPercentage as RF} from "react-native-responsive-fontsize";
+import { RFPercentage as RF } from "react-native-responsive-fontsize";
 
 function getWidthSize(percentage) {
   return Dimensions.get("window").width * (percentage / 100);
@@ -46,6 +46,10 @@ export default function styles() {
         fontFamily: "lato-regular",
         fontSize: RF(2),
         color: "#fff"
+      },
+      separator: {
+        height: RF(8),
+        width: getWidthSize(3)
       }
     });
   } else {
@@ -77,6 +81,10 @@ export default function styles() {
         fontFamily: "lato-regular",
         fontSize: RF(2),
         color: "#fff"
+      },
+      separator: {
+        height: RF(8),
+        width: getWidthSize(3)
       }
     });
   }

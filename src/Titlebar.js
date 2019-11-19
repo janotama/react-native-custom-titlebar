@@ -37,10 +37,10 @@ const Titlebar = props => {
               </TouchableOpacity>
             )
           :
-          null
+          <View style={global_style.separator} />
       }
       <View style={[global_style.headerCenter]}>
-        <Text style={[global_style.pageTitleFont, { marginRight: -10 }]}>
+        <Text style={[global_style.pageTitleFont]}>
           {props.title || "This is Header"}
         </Text>
       </View>
