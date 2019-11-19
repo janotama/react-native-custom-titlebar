@@ -37,7 +37,7 @@ const Titlebar = props => {
               </TouchableOpacity>
             )
           :
-          <View style={global_style.separator} />
+          (<View style={global_style.headerLeft} />)
       }
       <View style={[global_style.headerCenter]}>
         <Text style={[global_style.pageTitleFont]}>
