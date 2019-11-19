@@ -15,10 +15,6 @@ props :
 - isBackEnabled [bool]
 */
 
-function getWidthSize(percentage) {
-  return Dimensions.get("window").width * (percentage / 100);
-}
-
 const Titlebar = props => {
   return (
     <LinearGradient
@@ -44,7 +40,7 @@ const Titlebar = props => {
           null
       }
       <View style={[global_style.headerCenter]}>
-        <Text style={[global_style.pageTitleFont, { marginLeft: props.isBackEnabled ? getWidthSize(0) : getWidthSize(2) }]}>
+        <Text style={[global_style.pageTitleFont, { marginLeft: props.isBackEnabled ? 0 : 10 }]}>
           {props.title || "This is Header"}
         </Text>
       </View>
