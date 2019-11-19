@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import LinearGradient from "react-native-linear-gradient";
 import Feather from "react-native-vector-icons/Feather";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Dimensions } from "react-native";
 import styles from "./Styles.js";
 const global_style = styles().global;
 import { RFPercentage as RF } from "react-native-responsive-fontsize";
