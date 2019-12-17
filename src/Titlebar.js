@@ -29,7 +29,7 @@ const Titlebar = props => {
             <TouchableOpacity
               style={global_style.headerLeft}
               onPress={props.backAction}>
-              {/* <Feather name='menu' size={RF(4)} color='white' /> */}
+              <Feather name='menu' size={RF(4)} color='white' />
             </TouchableOpacity>
           ) : (
               <TouchableOpacity
