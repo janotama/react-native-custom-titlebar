@@ -32,7 +32,7 @@ npm install https://github.com/janotama/react-native-custom-titlebar
 
 ## Author
 
-👤 **Janotama**
+👤 **Janotama(JRTGG)**
 
 * Github: [@janotama](https://github.com/janotama)
 
